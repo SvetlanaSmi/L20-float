@@ -1,5 +1,5 @@
 :root {
-    font-size: 1em;
+    font-size: .9em;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
@@ -30,7 +30,7 @@ li>a {
     color: white;
 }
 .container {
-    background-color: rgb(106, 232, 248);
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     /* overflow: auto; */
@@ -40,24 +40,30 @@ li>a {
     content: " ";
 	display: table;
 }
-
+main {
+    position: relative;
+}
 .violet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: 150px;
-    height: 55em;
     background-color: rgb(248, 117, 248);
-    float: left;
 }
 .green {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 150px;
-    height: 55em;
     background: rgb(162, 219, 87);
-    float: right;
 }
 .content {
     background-color: rgb(255, 255, 255);
     margin-left: 150px;
     margin-right: 150px;
-    height: 55em;
+    min-height: calc(100vh - 137px);
     overflow: auto;
 }
 
@@ -76,21 +82,21 @@ li>a {
 
 img {
     display: table;
-    width: 150px;
-    margin: 30px 10px 50px 10px;
+    width: 100px;
+    margin: 20px 10px 0 10px;
     float: left;
 }
 h2 {
     margin: 20px 0 5px 0; 
 }
+p {
+    overflow: auto;
+}
 
 footer {
     display: block;
     height: 5em;
-    width: 100%;
     background-color: rgb(22, 100, 94);
-    position: absolute;
-    bottom: -30em;
 }
 
     
