@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
 }
+header {
+    height: 64px;
+}
 h1 {
   color: white;
   background: rgb(245, 173, 110);  
@@ -63,7 +66,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 150px;
     margin-right: 150px;
-    height: calc(100vh - 137px);
+    min-height: calc(100vh - 134px);
     overflow: auto;
     display: block;
 }
@@ -71,8 +74,8 @@ main {
 .block {
     background-color: rgb(224, 218, 218);
     width: calc(50% - 15px);
-    margin: 10px 0px 0px 0px;
-    overflow: auto;
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
     float: left;
 }
 .block:nth-child(odd) {
@@ -93,12 +96,12 @@ h2 {
     margin: 20px 0 5px 0; 
 }
 p {
-    overflow: auto;
+    overflow: hidden;
 }
 
 footer {
     display: block;
-    height: 5em;
+    height: 70px;
     background-color: rgb(22, 100, 94);
 }
 
