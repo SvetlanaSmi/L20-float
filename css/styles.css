@@ -63,22 +63,25 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 150px;
     margin-right: 150px;
-    min-height: calc(100vh - 137px);
+    height: calc(100vh - 137px);
     overflow: auto;
+    display: block;
 }
 
 .block {
     background-color: rgb(224, 218, 218);
-    width: 46%;
-    margin: 10px;
+    width: calc(50% - 15px);
+    margin: 10px 0px 0px 0px;
     overflow: auto;
     float: left;
 }
-/* .block::before, .block::after {
-    clear:both;
-    content: " ";
-	display: table;
-} */
+.block:nth-child(odd) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.block:nth-child(even) {
+    margin-right: 10px;
+}
 
 img {
     display: table;
