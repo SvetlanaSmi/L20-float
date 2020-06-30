@@ -1,5 +1,5 @@
 :root {
-    font-size: 1em;
+    font-size: .8em;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
     padding: 0;
 }
 header {
-    height: 4.5em;
+    height: 72px;
 }
 h1 {
   color: white;
@@ -66,7 +66,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 20%;
     margin-right: 20%;
-    min-height: calc(100vh - 134px);
+    min-height: calc(100vh - 142px);
     overflow: auto;
     display: block;
 }
@@ -75,7 +75,7 @@ main {
     background-color: rgb(224, 218, 218);
     width: calc(50% - 1em);
     min-width: 8.4em;
-    margin: .8em 0 .8em 0;
+    margin: 0 0 .8em 0;
     overflow: hidden;
     float: left;
 }
