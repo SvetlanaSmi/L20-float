@@ -10,7 +10,7 @@
     padding: 0;
 }
 header {
-    height: 72px;
+    height: 4.5em;
 }
 h1 {
   color: white;
@@ -45,6 +45,7 @@ li>a {
 }
 main {
     position: relative;
+    /* overflow: hidden; */
 }
 .violet {
     position: absolute;
@@ -66,7 +67,8 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 20%;
     margin-right: 20%;
-    min-height: calc(100vh - 142px);
+    /* margin-top: .8em; */
+    min-height: calc(100vh - 129px);
     overflow: auto;
     display: block;
 }
@@ -102,7 +104,7 @@ p {
 
 footer {
     display: block;
-    height: 70px;
+    height: 5em;
     background-color: rgb(22, 100, 94);
 }
 
