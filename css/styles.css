@@ -36,7 +36,6 @@ li>a {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    /* overflow: auto; */
 }
 .container::before, .container::after {
     clear: both;
@@ -45,7 +44,7 @@ li>a {
 }
 main {
     position: relative;
-    /* overflow: hidden; */
+    min-height: calc(100vh - 9.5em);
 }
 .violet {
     position: absolute;
@@ -67,8 +66,7 @@ main {
     background-color: rgb(255, 255, 255);
     margin-left: 20%;
     margin-right: 20%;
-    /* margin-top: .8em; */
-    min-height: calc(100vh - 129px);
+    padding-top: .8em;
     overflow: auto;
     display: block;
 }
