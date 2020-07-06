@@ -9,8 +9,44 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.container::before, .container::after,
+.content::before, .content::after {
+    clear: both;
+    content: " ";
+	display: table;
+}
+.row {
+    width: 100%;
+}
+.row::before, .row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.row>[class*=col-] {
+    float: left;
+}
+.col-1 {width: 8.3%;}
+.col-2 {width: 16.7%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.3%;}
+.col-5 {width: 41.6%;}
+.col-6 {width: calc(50% - 1.6em);}
+.col-7 {width: 58.3%;}
+.col-8 {width: 66.6%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.3%;}
+.col-11 {width: 91.6%;}
+.col-12 {width: 100%;}
+
+
 header {
-    height: 4.5em;
+    height: 4.6em;
 }
 h1 {
   color: white;
@@ -32,26 +68,81 @@ li>a {
     text-decoration: none;
     color: white;
 }
-.container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+
+
+main, .violet, .content, .green  {
+    height: calc(100vh - 9.6em);
 }
-.container::before, .container::after {
-    clear: both;
-    content: " ";
-	display: table;
+.violet {
+    background-color: rgb(247, 72, 238);
 }
-main {
+.green {
+    background-color: rgb(107, 252, 94);
+}
+.content {
+    padding-top: .8em;
+    overflow: auto;
+    display: block;
+}
+.block {
+    background-color: rgb(224, 218, 218);
+    min-width: 8.4em;
+    margin: 0 .8em .8em .8em;
+    overflow: hidden;
+}
+img {
+    display: table;
+    width: 7em;
+    margin: 1em .7em 0 .7em;
+    float: left;
+}
+h2 {
+    margin: 1.5em 0 .4em 0; 
+}
+p {
+    overflow: hidden;
+}
+
+footer {
+    display: block;
+    height: 5em;
+    background-color: rgb(22, 100, 94);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main {
     position: relative;
-    min-height: calc(100vh - 9.5em);
+    min-height: calc(100vh - 9.65em);
 }
 .violet {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 20%;
     background-color: rgb(248, 117, 248);
 }
 .green {
@@ -63,9 +154,8 @@ main {
     background: rgb(162, 219, 87);
 }
 .content {
-    background-color: rgb(255, 255, 255);
-    margin-left: 20%;
-    margin-right: 20%;
+    background-color: rgb(201, 130, 130);
+    margin: 0 auto;
     padding-top: .8em;
     overflow: auto;
     display: block;
@@ -104,6 +194,8 @@ footer {
     display: block;
     height: 5em;
     background-color: rgb(22, 100, 94);
-}
+} */
 
-    
+
+
+
