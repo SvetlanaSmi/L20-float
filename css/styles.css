@@ -71,16 +71,28 @@ li>a {
 
 
 main, .violet, .content, .green  {
-    height: calc(100vh - 9.6em);
+    min-height: calc(100vh - 9.6em);
+}
+.consist {
+   position: relative; 
 }
 .violet {
     background-color: rgb(247, 72, 238);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 .green {
     background-color: rgb(107, 252, 94);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 .content {
     padding-top: .8em;
+    margin-left:  16.7% ;
     display: block;
 }
 .block {
